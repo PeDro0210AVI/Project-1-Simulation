@@ -65,8 +65,6 @@
     in
     {
 
-      #TODO: make a darwin and linux different packages
-
       templates.default.path = ./.;
 
       devShells = forAllSystems (

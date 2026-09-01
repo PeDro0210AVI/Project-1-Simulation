@@ -9,11 +9,3 @@ fi
 
 # rebuild the cache forcefully
 _nix_direnv_force_reload=1 direnv exec "/Users/pedro021/Documents/UVG/4th-year/Models-Simulacion/Project-1-Simulation" true
-
-# Update the mtime for .envrc.
-# This will cause direnv to reload again - but without re-building.
-touch "/Users/pedro021/Documents/UVG/4th-year/Models-Simulacion/Project-1-Simulation/.envrc"
-
-# Also update the timestamp of whatever profile_rc we have.
-# This makes sure that we know we are up to date.
-touch -r "/Users/pedro021/Documents/UVG/4th-year/Models-Simulacion/Project-1-Simulation/.envrc" "/Users/pedro021/Documents/UVG/4th-year/Models-Simulacion/Project-1-Simulation/.direnv"/*.rc
