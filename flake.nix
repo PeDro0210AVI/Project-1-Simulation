@@ -29,16 +29,35 @@
                   jupyterlab-lsp
                   python-lsp-server
 
-                  numpy
-                  scipy
-                  scikit-learn
+                  virtualenv
+                  pip
+                  setuptools
+                  wheel
                 ];
               pythonEnv = pkgs.python3.withPackages pythonPackages;
+              rustEnv = with pkgs; [
+                cargo
+                rust-analyzer
+                clippy
+                rustfmt
+                taplo
+
+              ];
+
+              nativeBuildInputs = with pkgs; [
+                glfw
+                cmake
+                clang
+                cargo
+                rustc
+              ];
             in
             function {
               inherit
                 pkgs
                 pythonEnv
+                rustEnv
+                nativeBuildInputs
                 ;
 
             }
@@ -54,16 +73,25 @@
         {
           pkgs,
           pythonEnv,
+          rustEnv,
+          nativeBuildInputs,
         }:
         {
           default =
 
             pkgs.mkShell {
 
-              packages = [
+              inherit nativeBuildInputs;
+              packages = with pkgs; [
                 pythonEnv
-                pkgs.texliveFull
+                rustEnv
+
+                maturin
               ];
+
+              shellHook = ''
+                virtualenv .venv && source .venv/bin/activate
+              '';
 
             };
         }
