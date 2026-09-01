@@ -1,11 +1,13 @@
-mod util;
-
-pub fn inverse_exponential(rate: f32) -> f32 {
+fn inverse_exponential(rate: f32) -> f32 {
     let u: f32 = rand::random::<f32>();
     -(1.0 - u).ln() / rate
 }
+
+//POISSON
+
+// funny wrapper for simulation
 pub fn poisson_process_arrival(rate: f32) -> f32 {
-    util::inverse_exponential(rate)
+    inverse_exponential(rate)
 }
 
 //POISSON
@@ -31,12 +33,12 @@ pub fn customer_quantity(regular_rate: f32, wholesale_rate: f32) -> QuantityResu
 
     if u < 0.9 {
         QuantityResult {
-            quantity: util::inverse_exponential(regular_rate),
+            quantity: inverse_exponential(regular_rate),
             is_wholesale: false,
         }
     } else {
         QuantityResult {
-            quantity: util::inverse_exponential(wholesale_rate),
+            quantity: inverse_exponential(wholesale_rate),
             is_wholesale: true,
         }
     }
@@ -60,8 +62,9 @@ impl AcceptRejectResult {
     }
 }
 
+// funny wrapper for simulation in the inverse
 pub fn regular_quantity_inverse(rate: f32) -> f32 {
-    util::inverse_exponential(rate)
+    inverse_exponential(rate)
 }
 
 pub fn regular_quantity_accept_reject(rate: f32) -> AcceptRejectResult {
@@ -71,7 +74,7 @@ pub fn regular_quantity_accept_reject(rate: f32) -> AcceptRejectResult {
     loop {
         attempts += 1;
 
-        let y = util::inverse_exponential(envelope_rate);
+        let y = inverse_exponential(envelope_rate);
         let u: f32 = rand::random::<f32>();
 
         if u <= (-(rate - envelope_rate) * y).exp() {
