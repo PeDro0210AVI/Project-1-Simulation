@@ -1,6 +1,19 @@
 mod engines;
 use pyo3::prelude::*;
 
+/// Reinicia el generador con la semilla dada, para hacer reproducible la simulacion.
+/// Al importar el modulo ya queda sembrado con DEFAULT_SEED = 123.
+#[pyfunction]
+fn set_seed(seed: u64) {
+    engines::set_seed(seed);
+}
+
+/// Semilla con la que arranca el modulo.
+#[pyfunction]
+fn default_seed() -> u64 {
+    engines::DEFAULT_SEED
+}
+
 #[pyfunction]
 fn poisson_arrival(rate: f32) -> f32 {
     engines::poisson_process_arrival(rate)
@@ -25,9 +38,12 @@ fn regular_quantity_accept_reject(rate: f32) -> (f32, u32) {
 
 #[pymodule]
 fn random_engine(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(set_seed, m)?)?;
+    m.add_function(wrap_pyfunction!(default_seed, m)?)?;
     m.add_function(wrap_pyfunction!(poisson_arrival, m)?)?;
     m.add_function(wrap_pyfunction!(customer_quantity, m)?)?;
     m.add_function(wrap_pyfunction!(regular_quantity_inverse, m)?)?;
     m.add_function(wrap_pyfunction!(regular_quantity_accept_reject, m)?)?;
+    m.add("DEFAULT_SEED", engines::DEFAULT_SEED)?;
     Ok(())
 }

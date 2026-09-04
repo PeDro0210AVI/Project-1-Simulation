@@ -1,5 +1,32 @@
+use rand::rngs::StdRng;
+use rand::{RngExt, SeedableRng};
+use std::cell::RefCell;
+
+//SEED
+
+/// Semilla por defecto del motor. Fijarla hace que toda la simulacion sea
+/// reproducible: dos corridas con la misma semilla producen exactamente los
+/// mismos numeros.
+pub const DEFAULT_SEED: u64 = 123;
+
+thread_local! {
+    static RNG: RefCell<StdRng> = RefCell::new(StdRng::seed_from_u64(DEFAULT_SEED));
+}
+
+/// Reinicia el generador con la semilla dada.
+pub fn set_seed(seed: u64) {
+    RNG.with(|rng| *rng.borrow_mut() = StdRng::seed_from_u64(seed));
+}
+
+/// Unico punto donde se consume aleatoriedad: U ~ Uniforme[0, 1).
+fn uniform() -> f32 {
+    RNG.with(|rng| rng.borrow_mut().random::<f32>())
+}
+
+//SEED
+
 fn inverse_exponential(rate: f32) -> f32 {
-    let u: f32 = rand::random::<f32>();
+    let u: f32 = uniform();
     -(1.0 - u).ln() / rate
 }
 
@@ -29,7 +56,7 @@ impl QuantityResult {
 }
 
 pub fn customer_quantity(regular_rate: f32, wholesale_rate: f32) -> QuantityResult {
-    let u = rand::random::<f32>();
+    let u = uniform();
 
     if u < 0.9 {
         QuantityResult {
@@ -75,7 +102,7 @@ pub fn regular_quantity_accept_reject(rate: f32) -> AcceptRejectResult {
         attempts += 1;
 
         let y = inverse_exponential(envelope_rate);
-        let u: f32 = rand::random::<f32>();
+        let u: f32 = uniform();
 
         if u <= (-(rate - envelope_rate) * y).exp() {
             return AcceptRejectResult { value: y, attempts };
