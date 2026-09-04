@@ -98,7 +98,8 @@ def validar(payload: dict[str, Any]) -> None:
     for indice, bloque in enumerate(payload["franquicias"]):
         ubicacion = f"franquicias[{indice}]"
         for llave in ("id", "nombre", "lambda", "precio", "costo", "barrido",
-                      "politica_base", "politica_optima", "dias_base", "dias_optima"):
+                      "politica_base", "politica_optima", "dias_base", "dias_optima",
+                      "meses_ganados", "meses_totales"):
             if llave not in bloque:
                 raise ValueError(f"{ubicacion}: falta {llave!r}")
         ids_vistos.add(bloque["id"])

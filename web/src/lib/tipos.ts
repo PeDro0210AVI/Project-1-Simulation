@@ -54,6 +54,10 @@ export interface Franquicia {
   dias_base: Dia[];
   /** 30 dias operando con la politica optima. */
   dias_optima: Dia[];
+  /** De los meses simulados, en cuantos la politica optima supero a la base. */
+  meses_ganados: number;
+  /** Total de meses simulados. meses_ganados / meses_totales es la tasa de exito. */
+  meses_totales: number;
   /** Recomendacion de negocio en lenguaje llano. Seccion 4. */
   hallazgo: string;
 }
