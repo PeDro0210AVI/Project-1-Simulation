@@ -1,0 +1,12 @@
+# Dependencias de analisis para los notebooks y el paquete `simulation`.
+# El flake.nix provee Python, Jupyter y el toolchain de Rust, pero NO estas
+# librerias, y el .venv que crea `virtualenv` no ve los paquetes de Nix.
+# Instalar con:  pip install -r requirements.txt
+#
+# maturin compila el motor de Rust (random_engine) dentro del .venv.
+
+maturin>=1.9,<2.0
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+pandas>=2.1

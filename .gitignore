@@ -1,4 +1,21 @@
+# Rust
 target/
-.direnv/
-.venv/
 
+# Nix / direnv
+.direnv/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Salidas de trabajo del Rol B (CSV intermedios, graficas del informe).
+# El JSON que consume el sitio NO va aqui: ese si se versiona, en
+# web/public/data/simulacion.json, para que Rol C nunca quede bloqueado.
+salidas/
+
+# Node / Next viven en web/.gitignore
