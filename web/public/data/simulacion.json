@@ -1,0 +1,2459 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generado": "2026-09-04T00:26:48+00:00",
+    "semilla": 123,
+    "replicas": 1000,
+    "dias": 30,
+    "placeholder": true
+  },
+  "parametros": {
+    "composicion": {
+      "peso_mayorista": 0.1,
+      "media_regular": 2.0,
+      "media_mayorista": 20.0,
+      "media_mezcla_teorica": 3.8
+    },
+    "redondeo": {
+      "cantidad_minima": 1,
+      "nota": "Cantidad continua redondeada al entero mas cercano, minimo 1. Infla la media ~5%."
+    },
+    "paso_produccion": 10
+  },
+  "franquicias": [
+    {
+      "id": "miraflores",
+      "nombre": "Miraflores",
+      "contexto": "Zona comercial / mall, trafico medio-alto",
+      "lambda": 80.0,
+      "precio": 25.0,
+      "costo": 9.0,
+      "margen": 16.0,
+      "barrido": [
+        {
+          "produccion": 150,
+          "ganancia": 2382.97,
+          "desperdicio": 0.68,
+          "demanda_no_satisfecha": 168.97,
+          "vendidos": 149.32
+        },
+        {
+          "produccion": 160,
+          "ganancia": 2536.63,
+          "desperdicio": 0.93,
+          "demanda_no_satisfecha": 159.22,
+          "vendidos": 159.07
+        },
+        {
+          "produccion": 170,
+          "ganancia": 2688.3,
+          "desperdicio": 1.27,
+          "demanda_no_satisfecha": 149.56,
+          "vendidos": 168.73
+        },
+        {
+          "produccion": 180,
+          "ganancia": 2837.49,
+          "desperdicio": 1.7,
+          "demanda_no_satisfecha": 139.99,
+          "vendidos": 178.3
+        },
+        {
+          "produccion": 190,
+          "ganancia": 2983.65,
+          "desperdicio": 2.25,
+          "demanda_no_satisfecha": 130.54,
+          "vendidos": 187.75
+        },
+        {
+          "produccion": 200,
+          "ganancia": 3126.13,
+          "desperdicio": 2.95,
+          "demanda_no_satisfecha": 121.24,
+          "vendidos": 197.05
+        },
+        {
+          "produccion": 210,
+          "ganancia": 3264.23,
+          "desperdicio": 3.83,
+          "demanda_no_satisfecha": 112.12,
+          "vendidos": 206.17
+        },
+        {
+          "produccion": 220,
+          "ganancia": 3397.17,
+          "desperdicio": 4.91,
+          "demanda_no_satisfecha": 103.2,
+          "vendidos": 215.09
+        },
+        {
+          "produccion": 230,
+          "ganancia": 3524.13,
+          "desperdicio": 6.23,
+          "demanda_no_satisfecha": 94.52,
+          "vendidos": 223.77
+        },
+        {
+          "produccion": 240,
+          "ganancia": 3644.26,
+          "desperdicio": 7.83,
+          "demanda_no_satisfecha": 86.12,
+          "vendidos": 232.17
+        },
+        {
+          "produccion": 250,
+          "ganancia": 3756.69,
+          "desperdicio": 9.73,
+          "demanda_no_satisfecha": 78.02,
+          "vendidos": 240.27
+        },
+        {
+          "produccion": 260,
+          "ganancia": 3860.58,
+          "desperdicio": 11.98,
+          "demanda_no_satisfecha": 70.26,
+          "vendidos": 248.02
+        },
+        {
+          "produccion": 270,
+          "ganancia": 3955.12,
+          "desperdicio": 14.6,
+          "demanda_no_satisfecha": 62.88,
+          "vendidos": 255.4
+        },
+        {
+          "produccion": 280,
+          "ganancia": 4039.56,
+          "desperdicio": 17.62,
+          "demanda_no_satisfecha": 55.91,
+          "vendidos": 262.38
+        },
+        {
+          "produccion": 290,
+          "ganancia": 4113.26,
+          "desperdicio": 21.07,
+          "demanda_no_satisfecha": 49.36,
+          "vendidos": 268.93
+        },
+        {
+          "produccion": 300,
+          "ganancia": 4175.69,
+          "desperdicio": 24.97,
+          "demanda_no_satisfecha": 43.26,
+          "vendidos": 275.03
+        },
+        {
+          "produccion": 310,
+          "ganancia": 4226.49,
+          "desperdicio": 29.34,
+          "demanda_no_satisfecha": 37.63,
+          "vendidos": 280.66
+        },
+        {
+          "produccion": 320,
+          "ganancia": 4265.41,
+          "desperdicio": 34.18,
+          "demanda_no_satisfecha": 32.47,
+          "vendidos": 285.82
+        },
+        {
+          "produccion": 330,
+          "ganancia": 4292.41,
+          "desperdicio": 39.5,
+          "demanda_no_satisfecha": 27.79,
+          "vendidos": 290.5
+        },
+        {
+          "produccion": 340,
+          "ganancia": 4307.6,
+          "desperdicio": 45.3,
+          "demanda_no_satisfecha": 23.58,
+          "vendidos": 294.7
+        },
+        {
+          "produccion": 350,
+          "ganancia": 4311.25,
+          "desperdicio": 51.55,
+          "demanda_no_satisfecha": 19.84,
+          "vendidos": 298.45
+        },
+        {
+          "produccion": 360,
+          "ganancia": 4303.81,
+          "desperdicio": 58.25,
+          "demanda_no_satisfecha": 16.54,
+          "vendidos": 301.75
+        },
+        {
+          "produccion": 370,
+          "ganancia": 4285.83,
+          "desperdicio": 65.37,
+          "demanda_no_satisfecha": 13.65,
+          "vendidos": 304.63
+        },
+        {
+          "produccion": 380,
+          "ganancia": 4258.01,
+          "desperdicio": 72.88,
+          "demanda_no_satisfecha": 11.17,
+          "vendidos": 307.12
+        },
+        {
+          "produccion": 390,
+          "ganancia": 4221.1,
+          "desperdicio": 80.76,
+          "demanda_no_satisfecha": 9.04,
+          "vendidos": 309.24
+        },
+        {
+          "produccion": 400,
+          "ganancia": 4175.93,
+          "desperdicio": 88.96,
+          "demanda_no_satisfecha": 7.25,
+          "vendidos": 311.04
+        },
+        {
+          "produccion": 410,
+          "ganancia": 4123.37,
+          "desperdicio": 97.47,
+          "demanda_no_satisfecha": 5.75,
+          "vendidos": 312.53
+        },
+        {
+          "produccion": 420,
+          "ganancia": 4064.26,
+          "desperdicio": 106.23,
+          "demanda_no_satisfecha": 4.52,
+          "vendidos": 313.77
+        },
+        {
+          "produccion": 430,
+          "ganancia": 3999.47,
+          "desperdicio": 115.22,
+          "demanda_no_satisfecha": 3.51,
+          "vendidos": 314.78
+        },
+        {
+          "produccion": 440,
+          "ganancia": 3929.79,
+          "desperdicio": 124.41,
+          "demanda_no_satisfecha": 2.7,
+          "vendidos": 315.59
+        },
+        {
+          "produccion": 450,
+          "ganancia": 3855.97,
+          "desperdicio": 133.76,
+          "demanda_no_satisfecha": 2.05,
+          "vendidos": 316.24
+        },
+        {
+          "produccion": 460,
+          "ganancia": 3778.71,
+          "desperdicio": 143.25,
+          "demanda_no_satisfecha": 1.54,
+          "vendidos": 316.75
+        },
+        {
+          "produccion": 470,
+          "ganancia": 3698.6,
+          "desperdicio": 152.86,
+          "demanda_no_satisfecha": 1.14,
+          "vendidos": 317.14
+        },
+        {
+          "produccion": 480,
+          "ganancia": 3616.2,
+          "desperdicio": 162.55,
+          "demanda_no_satisfecha": 0.84,
+          "vendidos": 317.45
+        },
+        {
+          "produccion": 490,
+          "ganancia": 3531.96,
+          "desperdicio": 172.32,
+          "demanda_no_satisfecha": 0.61,
+          "vendidos": 317.68
+        },
+        {
+          "produccion": 500,
+          "ganancia": 3446.27,
+          "desperdicio": 182.15,
+          "demanda_no_satisfecha": 0.44,
+          "vendidos": 317.85
+        },
+        {
+          "produccion": 510,
+          "ganancia": 3359.45,
+          "desperdicio": 192.02,
+          "demanda_no_satisfecha": 0.31,
+          "vendidos": 317.98
+        },
+        {
+          "produccion": 520,
+          "ganancia": 3271.77,
+          "desperdicio": 201.93,
+          "demanda_no_satisfecha": 0.22,
+          "vendidos": 318.07
+        },
+        {
+          "produccion": 530,
+          "ganancia": 3183.44,
+          "desperdicio": 211.86,
+          "demanda_no_satisfecha": 0.15,
+          "vendidos": 318.14
+        },
+        {
+          "produccion": 540,
+          "ganancia": 3094.63,
+          "desperdicio": 221.81,
+          "demanda_no_satisfecha": 0.1,
+          "vendidos": 318.19
+        },
+        {
+          "produccion": 550,
+          "ganancia": 3005.47,
+          "desperdicio": 231.78,
+          "demanda_no_satisfecha": 0.07,
+          "vendidos": 318.22
+        }
+      ],
+      "politica_base": {
+        "produccion": 300,
+        "ganancia": 4175.69,
+        "desperdicio": 24.97,
+        "demanda_no_satisfecha": 43.26,
+        "vendidos": 275.03
+      },
+      "politica_optima": {
+        "produccion": 350,
+        "ganancia": 4311.25,
+        "desperdicio": 51.55,
+        "demanda_no_satisfecha": 19.84,
+        "vendidos": 298.45
+      },
+      "delta": {
+        "produccion": 50,
+        "ganancia": 135.56,
+        "ganancia_pct": 3.25,
+        "desperdicio": 26.58,
+        "demanda_no_satisfecha": -23.42
+      },
+      "dias_base": [
+        {
+          "dia": 1,
+          "demanda": 145,
+          "vendidos": 145,
+          "desperdicio": 155,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 925.0
+        },
+        {
+          "dia": 2,
+          "demanda": 333,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 33,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 3,
+          "demanda": 320,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 20,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 4,
+          "demanda": 253,
+          "vendidos": 253,
+          "desperdicio": 47,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3625.0
+        },
+        {
+          "dia": 5,
+          "demanda": 463,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 163,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 6,
+          "demanda": 135,
+          "vendidos": 135,
+          "desperdicio": 165,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 675.0
+        },
+        {
+          "dia": 7,
+          "demanda": 371,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 71,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 8,
+          "demanda": 345,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 45,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 9,
+          "demanda": 458,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 158,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 10,
+          "demanda": 204,
+          "vendidos": 204,
+          "desperdicio": 96,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2400.0
+        },
+        {
+          "dia": 11,
+          "demanda": 357,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 57,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 12,
+          "demanda": 274,
+          "vendidos": 274,
+          "desperdicio": 26,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4150.0
+        },
+        {
+          "dia": 13,
+          "demanda": 290,
+          "vendidos": 290,
+          "desperdicio": 10,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4550.0
+        },
+        {
+          "dia": 14,
+          "demanda": 202,
+          "vendidos": 202,
+          "desperdicio": 98,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2350.0
+        },
+        {
+          "dia": 15,
+          "demanda": 237,
+          "vendidos": 237,
+          "desperdicio": 63,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3225.0
+        },
+        {
+          "dia": 16,
+          "demanda": 312,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 12,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 17,
+          "demanda": 387,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 87,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 18,
+          "demanda": 400,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 100,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 19,
+          "demanda": 331,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 31,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 20,
+          "demanda": 490,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 190,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 21,
+          "demanda": 151,
+          "vendidos": 151,
+          "desperdicio": 149,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1075.0
+        },
+        {
+          "dia": 22,
+          "demanda": 213,
+          "vendidos": 213,
+          "desperdicio": 87,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2625.0
+        },
+        {
+          "dia": 23,
+          "demanda": 316,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 16,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 24,
+          "demanda": 252,
+          "vendidos": 252,
+          "desperdicio": 48,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3600.0
+        },
+        {
+          "dia": 25,
+          "demanda": 382,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 82,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 26,
+          "demanda": 437,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 137,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 27,
+          "demanda": 346,
+          "vendidos": 300,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 46,
+          "ganancia": 4800.0
+        },
+        {
+          "dia": 28,
+          "demanda": 211,
+          "vendidos": 211,
+          "desperdicio": 89,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2575.0
+        },
+        {
+          "dia": 29,
+          "demanda": 299,
+          "vendidos": 299,
+          "desperdicio": 1,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4775.0
+        },
+        {
+          "dia": 30,
+          "demanda": 278,
+          "vendidos": 278,
+          "desperdicio": 22,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4250.0
+        }
+      ],
+      "dias_optima": [
+        {
+          "dia": 1,
+          "demanda": 145,
+          "vendidos": 145,
+          "desperdicio": 205,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 475.0
+        },
+        {
+          "dia": 2,
+          "demanda": 333,
+          "vendidos": 333,
+          "desperdicio": 17,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5175.0
+        },
+        {
+          "dia": 3,
+          "demanda": 320,
+          "vendidos": 320,
+          "desperdicio": 30,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4850.0
+        },
+        {
+          "dia": 4,
+          "demanda": 253,
+          "vendidos": 253,
+          "desperdicio": 97,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3175.0
+        },
+        {
+          "dia": 5,
+          "demanda": 463,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 113,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 6,
+          "demanda": 135,
+          "vendidos": 135,
+          "desperdicio": 215,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 225.0
+        },
+        {
+          "dia": 7,
+          "demanda": 371,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 21,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 8,
+          "demanda": 345,
+          "vendidos": 345,
+          "desperdicio": 5,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5475.0
+        },
+        {
+          "dia": 9,
+          "demanda": 458,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 108,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 10,
+          "demanda": 204,
+          "vendidos": 204,
+          "desperdicio": 146,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1950.0
+        },
+        {
+          "dia": 11,
+          "demanda": 357,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 7,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 12,
+          "demanda": 274,
+          "vendidos": 274,
+          "desperdicio": 76,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3700.0
+        },
+        {
+          "dia": 13,
+          "demanda": 290,
+          "vendidos": 290,
+          "desperdicio": 60,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4100.0
+        },
+        {
+          "dia": 14,
+          "demanda": 202,
+          "vendidos": 202,
+          "desperdicio": 148,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1900.0
+        },
+        {
+          "dia": 15,
+          "demanda": 237,
+          "vendidos": 237,
+          "desperdicio": 113,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2775.0
+        },
+        {
+          "dia": 16,
+          "demanda": 312,
+          "vendidos": 312,
+          "desperdicio": 38,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4650.0
+        },
+        {
+          "dia": 17,
+          "demanda": 387,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 37,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 18,
+          "demanda": 400,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 50,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 19,
+          "demanda": 331,
+          "vendidos": 331,
+          "desperdicio": 19,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5125.0
+        },
+        {
+          "dia": 20,
+          "demanda": 490,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 140,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 21,
+          "demanda": 151,
+          "vendidos": 151,
+          "desperdicio": 199,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 625.0
+        },
+        {
+          "dia": 22,
+          "demanda": 213,
+          "vendidos": 213,
+          "desperdicio": 137,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2175.0
+        },
+        {
+          "dia": 23,
+          "demanda": 316,
+          "vendidos": 316,
+          "desperdicio": 34,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4750.0
+        },
+        {
+          "dia": 24,
+          "demanda": 252,
+          "vendidos": 252,
+          "desperdicio": 98,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3150.0
+        },
+        {
+          "dia": 25,
+          "demanda": 382,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 32,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 26,
+          "demanda": 437,
+          "vendidos": 350,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 87,
+          "ganancia": 5600.0
+        },
+        {
+          "dia": 27,
+          "demanda": 346,
+          "vendidos": 346,
+          "desperdicio": 4,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5500.0
+        },
+        {
+          "dia": 28,
+          "demanda": 211,
+          "vendidos": 211,
+          "desperdicio": 139,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2125.0
+        },
+        {
+          "dia": 29,
+          "demanda": 299,
+          "vendidos": 299,
+          "desperdicio": 51,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4325.0
+        },
+        {
+          "dia": 30,
+          "demanda": 278,
+          "vendidos": 278,
+          "desperdicio": 72,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3800.0
+        }
+      ],
+      "hallazgo": "[DATOS DE EJEMPLO] Miraflores esta sub-produciendo unos 50 brownies/dia. Ajustar la produccion a 350 mejoraria la ganancia diaria en Q135.56."
+    },
+    {
+      "id": "oakland",
+      "nombre": "Oakland",
+      "contexto": "Mall, trafico moderado",
+      "lambda": 50.0,
+      "precio": 25.0,
+      "costo": 9.0,
+      "margen": 16.0,
+      "barrido": [
+        {
+          "produccion": 80,
+          "ganancia": 1256.5,
+          "desperdicio": 0.94,
+          "demanda_no_satisfecha": 119.87,
+          "vendidos": 79.06
+        },
+        {
+          "produccion": 90,
+          "ganancia": 1405.91,
+          "desperdicio": 1.36,
+          "demanda_no_satisfecha": 110.29,
+          "vendidos": 88.64
+        },
+        {
+          "produccion": 100,
+          "ganancia": 1551.43,
+          "desperdicio": 1.94,
+          "demanda_no_satisfecha": 100.87,
+          "vendidos": 98.06
+        },
+        {
+          "produccion": 110,
+          "ganancia": 1692.02,
+          "desperdicio": 2.72,
+          "demanda_no_satisfecha": 91.65,
+          "vendidos": 107.28
+        },
+        {
+          "produccion": 120,
+          "ganancia": 1826.5,
+          "desperdicio": 3.74,
+          "demanda_no_satisfecha": 82.67,
+          "vendidos": 116.26
+        },
+        {
+          "produccion": 130,
+          "ganancia": 1953.59,
+          "desperdicio": 5.06,
+          "demanda_no_satisfecha": 73.99,
+          "vendidos": 124.94
+        },
+        {
+          "produccion": 140,
+          "ganancia": 2071.91,
+          "desperdicio": 6.72,
+          "demanda_no_satisfecha": 65.65,
+          "vendidos": 133.28
+        },
+        {
+          "produccion": 150,
+          "ganancia": 2180.1,
+          "desperdicio": 8.8,
+          "demanda_no_satisfecha": 57.73,
+          "vendidos": 141.2
+        },
+        {
+          "produccion": 160,
+          "ganancia": 2276.81,
+          "desperdicio": 11.33,
+          "demanda_no_satisfecha": 50.26,
+          "vendidos": 148.67
+        },
+        {
+          "produccion": 170,
+          "ganancia": 2360.85,
+          "desperdicio": 14.37,
+          "demanda_no_satisfecha": 43.3,
+          "vendidos": 155.63
+        },
+        {
+          "produccion": 180,
+          "ganancia": 2431.19,
+          "desperdicio": 17.95,
+          "demanda_no_satisfecha": 36.88,
+          "vendidos": 162.05
+        },
+        {
+          "produccion": 190,
+          "ganancia": 2487.05,
+          "desperdicio": 22.12,
+          "demanda_no_satisfecha": 31.05,
+          "vendidos": 167.88
+        },
+        {
+          "produccion": 200,
+          "ganancia": 2527.98,
+          "desperdicio": 26.88,
+          "demanda_no_satisfecha": 25.81,
+          "vendidos": 173.12
+        },
+        {
+          "produccion": 210,
+          "ganancia": 2553.83,
+          "desperdicio": 32.25,
+          "demanda_no_satisfecha": 21.18,
+          "vendidos": 177.75
+        },
+        {
+          "produccion": 220,
+          "ganancia": 2564.82,
+          "desperdicio": 38.21,
+          "demanda_no_satisfecha": 17.14,
+          "vendidos": 181.79
+        },
+        {
+          "produccion": 230,
+          "ganancia": 2561.48,
+          "desperdicio": 44.74,
+          "demanda_no_satisfecha": 13.67,
+          "vendidos": 185.26
+        },
+        {
+          "produccion": 240,
+          "ganancia": 2544.63,
+          "desperdicio": 51.81,
+          "demanda_no_satisfecha": 10.74,
+          "vendidos": 188.19
+        },
+        {
+          "produccion": 250,
+          "ganancia": 2515.36,
+          "desperdicio": 59.39,
+          "demanda_no_satisfecha": 8.32,
+          "vendidos": 190.61
+        },
+        {
+          "produccion": 260,
+          "ganancia": 2474.89,
+          "desperdicio": 67.4,
+          "demanda_no_satisfecha": 6.33,
+          "vendidos": 192.6
+        },
+        {
+          "produccion": 270,
+          "ganancia": 2424.57,
+          "desperdicio": 75.82,
+          "demanda_no_satisfecha": 4.75,
+          "vendidos": 194.18
+        },
+        {
+          "produccion": 280,
+          "ganancia": 2365.79,
+          "desperdicio": 84.57,
+          "demanda_no_satisfecha": 3.5,
+          "vendidos": 195.43
+        },
+        {
+          "produccion": 290,
+          "ganancia": 2299.9,
+          "desperdicio": 93.6,
+          "demanda_no_satisfecha": 2.53,
+          "vendidos": 196.4
+        },
+        {
+          "produccion": 300,
+          "ganancia": 2228.15,
+          "desperdicio": 102.87,
+          "demanda_no_satisfecha": 1.8,
+          "vendidos": 197.13
+        },
+        {
+          "produccion": 310,
+          "ganancia": 2151.72,
+          "desperdicio": 112.33,
+          "demanda_no_satisfecha": 1.26,
+          "vendidos": 197.67
+        },
+        {
+          "produccion": 320,
+          "ganancia": 2071.6,
+          "desperdicio": 121.94,
+          "demanda_no_satisfecha": 0.87,
+          "vendidos": 198.06
+        },
+        {
+          "produccion": 330,
+          "ganancia": 1988.66,
+          "desperdicio": 131.65,
+          "demanda_no_satisfecha": 0.58,
+          "vendidos": 198.35
+        },
+        {
+          "produccion": 340,
+          "ganancia": 1903.6,
+          "desperdicio": 141.46,
+          "demanda_no_satisfecha": 0.39,
+          "vendidos": 198.54
+        },
+        {
+          "produccion": 350,
+          "ganancia": 1816.99,
+          "desperdicio": 151.32,
+          "demanda_no_satisfecha": 0.25,
+          "vendidos": 198.68
+        },
+        {
+          "produccion": 360,
+          "ganancia": 1729.26,
+          "desperdicio": 161.23,
+          "demanda_no_satisfecha": 0.16,
+          "vendidos": 198.77
+        },
+        {
+          "produccion": 370,
+          "ganancia": 1640.76,
+          "desperdicio": 171.17,
+          "demanda_no_satisfecha": 0.1,
+          "vendidos": 198.83
+        },
+        {
+          "produccion": 380,
+          "ganancia": 1551.73,
+          "desperdicio": 181.13,
+          "demanda_no_satisfecha": 0.06,
+          "vendidos": 198.87
+        }
+      ],
+      "politica_base": {
+        "produccion": 200,
+        "ganancia": 2527.98,
+        "desperdicio": 26.88,
+        "demanda_no_satisfecha": 25.81,
+        "vendidos": 173.12
+      },
+      "politica_optima": {
+        "produccion": 220,
+        "ganancia": 2564.82,
+        "desperdicio": 38.21,
+        "demanda_no_satisfecha": 17.14,
+        "vendidos": 181.79
+      },
+      "delta": {
+        "produccion": 20,
+        "ganancia": 36.84,
+        "ganancia_pct": 1.46,
+        "desperdicio": 11.33,
+        "demanda_no_satisfecha": -8.67
+      },
+      "dias_base": [
+        {
+          "dia": 1,
+          "demanda": 267,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 67,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 2,
+          "demanda": 221,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 21,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 3,
+          "demanda": 204,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 4,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 4,
+          "demanda": 210,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 10,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 5,
+          "demanda": 158,
+          "vendidos": 158,
+          "desperdicio": 42,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2150.0
+        },
+        {
+          "dia": 6,
+          "demanda": 265,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 65,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 7,
+          "demanda": 197,
+          "vendidos": 197,
+          "desperdicio": 3,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3125.0
+        },
+        {
+          "dia": 8,
+          "demanda": 271,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 71,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 9,
+          "demanda": 201,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 1,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 10,
+          "demanda": 146,
+          "vendidos": 146,
+          "desperdicio": 54,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1850.0
+        },
+        {
+          "dia": 11,
+          "demanda": 137,
+          "vendidos": 137,
+          "desperdicio": 63,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1625.0
+        },
+        {
+          "dia": 12,
+          "demanda": 117,
+          "vendidos": 117,
+          "desperdicio": 83,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1125.0
+        },
+        {
+          "dia": 13,
+          "demanda": 77,
+          "vendidos": 77,
+          "desperdicio": 123,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 125.0
+        },
+        {
+          "dia": 14,
+          "demanda": 228,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 28,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 15,
+          "demanda": 124,
+          "vendidos": 124,
+          "desperdicio": 76,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1300.0
+        },
+        {
+          "dia": 16,
+          "demanda": 186,
+          "vendidos": 186,
+          "desperdicio": 14,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2850.0
+        },
+        {
+          "dia": 17,
+          "demanda": 36,
+          "vendidos": 36,
+          "desperdicio": 164,
+          "demanda_no_satisfecha": 0,
+          "ganancia": -900.0
+        },
+        {
+          "dia": 18,
+          "demanda": 182,
+          "vendidos": 182,
+          "desperdicio": 18,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2750.0
+        },
+        {
+          "dia": 19,
+          "demanda": 298,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 98,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 20,
+          "demanda": 194,
+          "vendidos": 194,
+          "desperdicio": 6,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3050.0
+        },
+        {
+          "dia": 21,
+          "demanda": 215,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 15,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 22,
+          "demanda": 147,
+          "vendidos": 147,
+          "desperdicio": 53,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1875.0
+        },
+        {
+          "dia": 23,
+          "demanda": 192,
+          "vendidos": 192,
+          "desperdicio": 8,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3000.0
+        },
+        {
+          "dia": 24,
+          "demanda": 251,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 51,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 25,
+          "demanda": 176,
+          "vendidos": 176,
+          "desperdicio": 24,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2600.0
+        },
+        {
+          "dia": 26,
+          "demanda": 223,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 23,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 27,
+          "demanda": 284,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 84,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 28,
+          "demanda": 227,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 27,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 29,
+          "demanda": 253,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 53,
+          "ganancia": 3200.0
+        },
+        {
+          "dia": 30,
+          "demanda": 247,
+          "vendidos": 200,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 47,
+          "ganancia": 3200.0
+        }
+      ],
+      "dias_optima": [
+        {
+          "dia": 1,
+          "demanda": 267,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 47,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 2,
+          "demanda": 221,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 1,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 3,
+          "demanda": 204,
+          "vendidos": 204,
+          "desperdicio": 16,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3120.0
+        },
+        {
+          "dia": 4,
+          "demanda": 210,
+          "vendidos": 210,
+          "desperdicio": 10,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3270.0
+        },
+        {
+          "dia": 5,
+          "demanda": 158,
+          "vendidos": 158,
+          "desperdicio": 62,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1970.0
+        },
+        {
+          "dia": 6,
+          "demanda": 265,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 45,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 7,
+          "demanda": 197,
+          "vendidos": 197,
+          "desperdicio": 23,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2945.0
+        },
+        {
+          "dia": 8,
+          "demanda": 271,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 51,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 9,
+          "demanda": 201,
+          "vendidos": 201,
+          "desperdicio": 19,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3045.0
+        },
+        {
+          "dia": 10,
+          "demanda": 146,
+          "vendidos": 146,
+          "desperdicio": 74,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1670.0
+        },
+        {
+          "dia": 11,
+          "demanda": 137,
+          "vendidos": 137,
+          "desperdicio": 83,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1445.0
+        },
+        {
+          "dia": 12,
+          "demanda": 117,
+          "vendidos": 117,
+          "desperdicio": 103,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 945.0
+        },
+        {
+          "dia": 13,
+          "demanda": 77,
+          "vendidos": 77,
+          "desperdicio": 143,
+          "demanda_no_satisfecha": 0,
+          "ganancia": -55.0
+        },
+        {
+          "dia": 14,
+          "demanda": 228,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 8,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 15,
+          "demanda": 124,
+          "vendidos": 124,
+          "desperdicio": 96,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1120.0
+        },
+        {
+          "dia": 16,
+          "demanda": 186,
+          "vendidos": 186,
+          "desperdicio": 34,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2670.0
+        },
+        {
+          "dia": 17,
+          "demanda": 36,
+          "vendidos": 36,
+          "desperdicio": 184,
+          "demanda_no_satisfecha": 0,
+          "ganancia": -1080.0
+        },
+        {
+          "dia": 18,
+          "demanda": 182,
+          "vendidos": 182,
+          "desperdicio": 38,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2570.0
+        },
+        {
+          "dia": 19,
+          "demanda": 298,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 78,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 20,
+          "demanda": 194,
+          "vendidos": 194,
+          "desperdicio": 26,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2870.0
+        },
+        {
+          "dia": 21,
+          "demanda": 215,
+          "vendidos": 215,
+          "desperdicio": 5,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3395.0
+        },
+        {
+          "dia": 22,
+          "demanda": 147,
+          "vendidos": 147,
+          "desperdicio": 73,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 1695.0
+        },
+        {
+          "dia": 23,
+          "demanda": 192,
+          "vendidos": 192,
+          "desperdicio": 28,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2820.0
+        },
+        {
+          "dia": 24,
+          "demanda": 251,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 31,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 25,
+          "demanda": 176,
+          "vendidos": 176,
+          "desperdicio": 44,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2420.0
+        },
+        {
+          "dia": 26,
+          "demanda": 223,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 3,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 27,
+          "demanda": 284,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 64,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 28,
+          "demanda": 227,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 7,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 29,
+          "demanda": 253,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 33,
+          "ganancia": 3520.0
+        },
+        {
+          "dia": 30,
+          "demanda": 247,
+          "vendidos": 220,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 27,
+          "ganancia": 3520.0
+        }
+      ],
+      "hallazgo": "[DATOS DE EJEMPLO] Oakland esta sub-produciendo unos 20 brownies/dia. Ajustar la produccion a 220 mejoraria la ganancia diaria en Q36.84."
+    },
+    {
+      "id": "uvg",
+      "nombre": "UVG",
+      "contexto": "Campus universitario, trafico muy alto, presupuesto ajustado",
+      "lambda": 120.0,
+      "precio": 20.0,
+      "costo": 9.0,
+      "margen": 11.0,
+      "barrido": [
+        {
+          "produccion": 250,
+          "ganancia": 2740.65,
+          "desperdicio": 0.47,
+          "demanda_no_satisfecha": 227.9,
+          "vendidos": 249.53
+        },
+        {
+          "produccion": 260,
+          "ganancia": 2847.67,
+          "desperdicio": 0.62,
+          "demanda_no_satisfecha": 218.05,
+          "vendidos": 259.38
+        },
+        {
+          "produccion": 270,
+          "ganancia": 2953.88,
+          "desperdicio": 0.81,
+          "demanda_no_satisfecha": 208.24,
+          "vendidos": 269.19
+        },
+        {
+          "produccion": 280,
+          "ganancia": 3059.09,
+          "desperdicio": 1.05,
+          "demanda_no_satisfecha": 198.48,
+          "vendidos": 278.95
+        },
+        {
+          "produccion": 290,
+          "ganancia": 3163.09,
+          "desperdicio": 1.35,
+          "demanda_no_satisfecha": 188.78,
+          "vendidos": 288.65
+        },
+        {
+          "produccion": 300,
+          "ganancia": 3265.62,
+          "desperdicio": 1.72,
+          "demanda_no_satisfecha": 179.15,
+          "vendidos": 298.28
+        },
+        {
+          "produccion": 310,
+          "ganancia": 3366.42,
+          "desperdicio": 2.18,
+          "demanda_no_satisfecha": 169.61,
+          "vendidos": 307.82
+        },
+        {
+          "produccion": 320,
+          "ganancia": 3465.18,
+          "desperdicio": 2.74,
+          "demanda_no_satisfecha": 160.17,
+          "vendidos": 317.26
+        },
+        {
+          "produccion": 330,
+          "ganancia": 3561.54,
+          "desperdicio": 3.42,
+          "demanda_no_satisfecha": 150.85,
+          "vendidos": 326.58
+        },
+        {
+          "produccion": 340,
+          "ganancia": 3655.15,
+          "desperdicio": 4.24,
+          "demanda_no_satisfecha": 141.67,
+          "vendidos": 335.76
+        },
+        {
+          "produccion": 350,
+          "ganancia": 3745.58,
+          "desperdicio": 5.22,
+          "demanda_no_satisfecha": 132.65,
+          "vendidos": 344.78
+        },
+        {
+          "produccion": 360,
+          "ganancia": 3832.43,
+          "desperdicio": 6.38,
+          "demanda_no_satisfecha": 123.81,
+          "vendidos": 353.62
+        },
+        {
+          "produccion": 370,
+          "ganancia": 3915.24,
+          "desperdicio": 7.74,
+          "demanda_no_satisfecha": 115.17,
+          "vendidos": 362.26
+        },
+        {
+          "produccion": 380,
+          "ganancia": 3993.55,
+          "desperdicio": 9.32,
+          "demanda_no_satisfecha": 106.75,
+          "vendidos": 370.68
+        },
+        {
+          "produccion": 390,
+          "ganancia": 4066.91,
+          "desperdicio": 11.15,
+          "demanda_no_satisfecha": 98.59,
+          "vendidos": 378.85
+        },
+        {
+          "produccion": 400,
+          "ganancia": 4134.86,
+          "desperdicio": 13.26,
+          "demanda_no_satisfecha": 90.69,
+          "vendidos": 386.74
+        },
+        {
+          "produccion": 410,
+          "ganancia": 4196.95,
+          "desperdicio": 15.65,
+          "demanda_no_satisfecha": 83.08,
+          "vendidos": 394.35
+        },
+        {
+          "produccion": 420,
+          "ganancia": 4252.77,
+          "desperdicio": 18.36,
+          "demanda_no_satisfecha": 75.79,
+          "vendidos": 401.64
+        },
+        {
+          "produccion": 430,
+          "ganancia": 4301.93,
+          "desperdicio": 21.4,
+          "demanda_no_satisfecha": 68.84,
+          "vendidos": 408.6
+        },
+        {
+          "produccion": 440,
+          "ganancia": 4344.09,
+          "desperdicio": 24.8,
+          "demanda_no_satisfecha": 62.23,
+          "vendidos": 415.2
+        },
+        {
+          "produccion": 450,
+          "ganancia": 4378.96,
+          "desperdicio": 28.55,
+          "demanda_no_satisfecha": 55.98,
+          "vendidos": 421.45
+        },
+        {
+          "produccion": 460,
+          "ganancia": 4406.31,
+          "desperdicio": 32.68,
+          "demanda_no_satisfecha": 50.12,
+          "vendidos": 427.32
+        },
+        {
+          "produccion": 470,
+          "ganancia": 4425.98,
+          "desperdicio": 37.2,
+          "demanda_no_satisfecha": 44.63,
+          "vendidos": 432.8
+        },
+        {
+          "produccion": 480,
+          "ganancia": 4437.88,
+          "desperdicio": 42.11,
+          "demanda_no_satisfecha": 39.54,
+          "vendidos": 437.89
+        },
+        {
+          "produccion": 490,
+          "ganancia": 4441.98,
+          "desperdicio": 47.4,
+          "demanda_no_satisfecha": 34.83,
+          "vendidos": 442.6
+        },
+        {
+          "produccion": 500,
+          "ganancia": 4438.35,
+          "desperdicio": 53.08,
+          "demanda_no_satisfecha": 30.51,
+          "vendidos": 446.92
+        },
+        {
+          "produccion": 510,
+          "ganancia": 4427.11,
+          "desperdicio": 59.14,
+          "demanda_no_satisfecha": 26.58,
+          "vendidos": 450.86
+        },
+        {
+          "produccion": 520,
+          "ganancia": 4408.47,
+          "desperdicio": 65.58,
+          "demanda_no_satisfecha": 23.01,
+          "vendidos": 454.42
+        },
+        {
+          "produccion": 530,
+          "ganancia": 4382.67,
+          "desperdicio": 72.37,
+          "demanda_no_satisfecha": 19.8,
+          "vendidos": 457.63
+        },
+        {
+          "produccion": 540,
+          "ganancia": 4350.05,
+          "desperdicio": 79.5,
+          "demanda_no_satisfecha": 16.93,
+          "vendidos": 460.5
+        },
+        {
+          "produccion": 550,
+          "ganancia": 4310.96,
+          "desperdicio": 86.95,
+          "demanda_no_satisfecha": 14.38,
+          "vendidos": 463.05
+        },
+        {
+          "produccion": 560,
+          "ganancia": 4265.8,
+          "desperdicio": 94.71,
+          "demanda_no_satisfecha": 12.14,
+          "vendidos": 465.29
+        },
+        {
+          "produccion": 570,
+          "ganancia": 4215.02,
+          "desperdicio": 102.75,
+          "demanda_no_satisfecha": 10.18,
+          "vendidos": 467.25
+        },
+        {
+          "produccion": 580,
+          "ganancia": 4159.06,
+          "desperdicio": 111.05,
+          "demanda_no_satisfecha": 8.48,
+          "vendidos": 468.95
+        },
+        {
+          "produccion": 590,
+          "ganancia": 4098.38,
+          "desperdicio": 119.58,
+          "demanda_no_satisfecha": 7.01,
+          "vendidos": 470.42
+        },
+        {
+          "produccion": 600,
+          "ganancia": 4033.44,
+          "desperdicio": 128.33,
+          "demanda_no_satisfecha": 5.76,
+          "vendidos": 471.67
+        },
+        {
+          "produccion": 610,
+          "ganancia": 3964.69,
+          "desperdicio": 137.27,
+          "demanda_no_satisfecha": 4.7,
+          "vendidos": 472.73
+        },
+        {
+          "produccion": 620,
+          "ganancia": 3892.58,
+          "desperdicio": 146.37,
+          "demanda_no_satisfecha": 3.8,
+          "vendidos": 473.63
+        },
+        {
+          "produccion": 630,
+          "ganancia": 3817.51,
+          "desperdicio": 155.62,
+          "demanda_no_satisfecha": 3.06,
+          "vendidos": 474.38
+        },
+        {
+          "produccion": 640,
+          "ganancia": 3739.87,
+          "desperdicio": 165.01,
+          "demanda_no_satisfecha": 2.44,
+          "vendidos": 474.99
+        },
+        {
+          "produccion": 650,
+          "ganancia": 3660.02,
+          "desperdicio": 174.5,
+          "demanda_no_satisfecha": 1.93,
+          "vendidos": 475.5
+        },
+        {
+          "produccion": 660,
+          "ganancia": 3578.29,
+          "desperdicio": 184.09,
+          "demanda_no_satisfecha": 1.52,
+          "vendidos": 475.91
+        },
+        {
+          "produccion": 670,
+          "ganancia": 3494.98,
+          "desperdicio": 193.75,
+          "demanda_no_satisfecha": 1.18,
+          "vendidos": 476.25
+        },
+        {
+          "produccion": 680,
+          "ganancia": 3410.33,
+          "desperdicio": 203.48,
+          "demanda_no_satisfecha": 0.92,
+          "vendidos": 476.52
+        },
+        {
+          "produccion": 690,
+          "ganancia": 3324.58,
+          "desperdicio": 213.27,
+          "demanda_no_satisfecha": 0.7,
+          "vendidos": 476.73
+        },
+        {
+          "produccion": 700,
+          "ganancia": 3237.93,
+          "desperdicio": 223.1,
+          "demanda_no_satisfecha": 0.54,
+          "vendidos": 476.9
+        },
+        {
+          "produccion": 710,
+          "ganancia": 3150.55,
+          "desperdicio": 232.97,
+          "demanda_no_satisfecha": 0.4,
+          "vendidos": 477.03
+        },
+        {
+          "produccion": 720,
+          "ganancia": 3062.57,
+          "desperdicio": 242.87,
+          "demanda_no_satisfecha": 0.3,
+          "vendidos": 477.13
+        },
+        {
+          "produccion": 730,
+          "ganancia": 2974.13,
+          "desperdicio": 252.79,
+          "demanda_no_satisfecha": 0.23,
+          "vendidos": 477.21
+        },
+        {
+          "produccion": 740,
+          "ganancia": 2885.31,
+          "desperdicio": 262.73,
+          "demanda_no_satisfecha": 0.17,
+          "vendidos": 477.27
+        },
+        {
+          "produccion": 750,
+          "ganancia": 2796.21,
+          "desperdicio": 272.69,
+          "demanda_no_satisfecha": 0.12,
+          "vendidos": 477.31
+        }
+      ],
+      "politica_base": {
+        "produccion": 450,
+        "ganancia": 4378.96,
+        "desperdicio": 28.55,
+        "demanda_no_satisfecha": 55.98,
+        "vendidos": 421.45
+      },
+      "politica_optima": {
+        "produccion": 490,
+        "ganancia": 4441.98,
+        "desperdicio": 47.4,
+        "demanda_no_satisfecha": 34.83,
+        "vendidos": 442.6
+      },
+      "delta": {
+        "produccion": 40,
+        "ganancia": 63.02,
+        "ganancia_pct": 1.44,
+        "desperdicio": 18.85,
+        "demanda_no_satisfecha": -21.15
+      },
+      "dias_base": [
+        {
+          "dia": 1,
+          "demanda": 431,
+          "vendidos": 431,
+          "desperdicio": 19,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4570.0
+        },
+        {
+          "dia": 2,
+          "demanda": 465,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 15,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 3,
+          "demanda": 621,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 171,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 4,
+          "demanda": 481,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 31,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 5,
+          "demanda": 530,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 80,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 6,
+          "demanda": 390,
+          "vendidos": 390,
+          "desperdicio": 60,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3750.0
+        },
+        {
+          "dia": 7,
+          "demanda": 584,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 134,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 8,
+          "demanda": 615,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 165,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 9,
+          "demanda": 437,
+          "vendidos": 437,
+          "desperdicio": 13,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4690.0
+        },
+        {
+          "dia": 10,
+          "demanda": 695,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 245,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 11,
+          "demanda": 348,
+          "vendidos": 348,
+          "desperdicio": 102,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2910.0
+        },
+        {
+          "dia": 12,
+          "demanda": 614,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 164,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 13,
+          "demanda": 444,
+          "vendidos": 444,
+          "desperdicio": 6,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4830.0
+        },
+        {
+          "dia": 14,
+          "demanda": 522,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 72,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 15,
+          "demanda": 425,
+          "vendidos": 425,
+          "desperdicio": 25,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4450.0
+        },
+        {
+          "dia": 16,
+          "demanda": 541,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 91,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 17,
+          "demanda": 350,
+          "vendidos": 350,
+          "desperdicio": 100,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2950.0
+        },
+        {
+          "dia": 18,
+          "demanda": 431,
+          "vendidos": 431,
+          "desperdicio": 19,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4570.0
+        },
+        {
+          "dia": 19,
+          "demanda": 480,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 30,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 20,
+          "demanda": 515,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 65,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 21,
+          "demanda": 476,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 26,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 22,
+          "demanda": 327,
+          "vendidos": 327,
+          "desperdicio": 123,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2490.0
+        },
+        {
+          "dia": 23,
+          "demanda": 424,
+          "vendidos": 424,
+          "desperdicio": 26,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4430.0
+        },
+        {
+          "dia": 24,
+          "demanda": 433,
+          "vendidos": 433,
+          "desperdicio": 17,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4610.0
+        },
+        {
+          "dia": 25,
+          "demanda": 401,
+          "vendidos": 401,
+          "desperdicio": 49,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3970.0
+        },
+        {
+          "dia": 26,
+          "demanda": 426,
+          "vendidos": 426,
+          "desperdicio": 24,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4470.0
+        },
+        {
+          "dia": 27,
+          "demanda": 512,
+          "vendidos": 450,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 62,
+          "ganancia": 4950.0
+        },
+        {
+          "dia": 28,
+          "demanda": 448,
+          "vendidos": 448,
+          "desperdicio": 2,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4910.0
+        },
+        {
+          "dia": 29,
+          "demanda": 419,
+          "vendidos": 419,
+          "desperdicio": 31,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4330.0
+        },
+        {
+          "dia": 30,
+          "demanda": 221,
+          "vendidos": 221,
+          "desperdicio": 229,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 370.0
+        }
+      ],
+      "dias_optima": [
+        {
+          "dia": 1,
+          "demanda": 431,
+          "vendidos": 431,
+          "desperdicio": 59,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4210.0
+        },
+        {
+          "dia": 2,
+          "demanda": 465,
+          "vendidos": 465,
+          "desperdicio": 25,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4890.0
+        },
+        {
+          "dia": 3,
+          "demanda": 621,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 131,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 4,
+          "demanda": 481,
+          "vendidos": 481,
+          "desperdicio": 9,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5210.0
+        },
+        {
+          "dia": 5,
+          "demanda": 530,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 40,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 6,
+          "demanda": 390,
+          "vendidos": 390,
+          "desperdicio": 100,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3390.0
+        },
+        {
+          "dia": 7,
+          "demanda": 584,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 94,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 8,
+          "demanda": 615,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 125,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 9,
+          "demanda": 437,
+          "vendidos": 437,
+          "desperdicio": 53,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4330.0
+        },
+        {
+          "dia": 10,
+          "demanda": 695,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 205,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 11,
+          "demanda": 348,
+          "vendidos": 348,
+          "desperdicio": 142,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2550.0
+        },
+        {
+          "dia": 12,
+          "demanda": 614,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 124,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 13,
+          "demanda": 444,
+          "vendidos": 444,
+          "desperdicio": 46,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4470.0
+        },
+        {
+          "dia": 14,
+          "demanda": 522,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 32,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 15,
+          "demanda": 425,
+          "vendidos": 425,
+          "desperdicio": 65,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4090.0
+        },
+        {
+          "dia": 16,
+          "demanda": 541,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 51,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 17,
+          "demanda": 350,
+          "vendidos": 350,
+          "desperdicio": 140,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2590.0
+        },
+        {
+          "dia": 18,
+          "demanda": 431,
+          "vendidos": 431,
+          "desperdicio": 59,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4210.0
+        },
+        {
+          "dia": 19,
+          "demanda": 480,
+          "vendidos": 480,
+          "desperdicio": 10,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5190.0
+        },
+        {
+          "dia": 20,
+          "demanda": 515,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 25,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 21,
+          "demanda": 476,
+          "vendidos": 476,
+          "desperdicio": 14,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 5110.0
+        },
+        {
+          "dia": 22,
+          "demanda": 327,
+          "vendidos": 327,
+          "desperdicio": 163,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 2130.0
+        },
+        {
+          "dia": 23,
+          "demanda": 424,
+          "vendidos": 424,
+          "desperdicio": 66,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4070.0
+        },
+        {
+          "dia": 24,
+          "demanda": 433,
+          "vendidos": 433,
+          "desperdicio": 57,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4250.0
+        },
+        {
+          "dia": 25,
+          "demanda": 401,
+          "vendidos": 401,
+          "desperdicio": 89,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3610.0
+        },
+        {
+          "dia": 26,
+          "demanda": 426,
+          "vendidos": 426,
+          "desperdicio": 64,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4110.0
+        },
+        {
+          "dia": 27,
+          "demanda": 512,
+          "vendidos": 490,
+          "desperdicio": 0,
+          "demanda_no_satisfecha": 22,
+          "ganancia": 5390.0
+        },
+        {
+          "dia": 28,
+          "demanda": 448,
+          "vendidos": 448,
+          "desperdicio": 42,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 4550.0
+        },
+        {
+          "dia": 29,
+          "demanda": 419,
+          "vendidos": 419,
+          "desperdicio": 71,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 3970.0
+        },
+        {
+          "dia": 30,
+          "demanda": 221,
+          "vendidos": 221,
+          "desperdicio": 269,
+          "demanda_no_satisfecha": 0,
+          "ganancia": 10.0
+        }
+      ],
+      "hallazgo": "[DATOS DE EJEMPLO] UVG esta sub-produciendo unos 40 brownies/dia. Ajustar la produccion a 490 mejoraria la ganancia diaria en Q63.02."
+    }
+  ],
+  "comparacion_metodos": {
+    "n_muestras": 0,
+    "inversa": {
+      "segundos": 0.0,
+      "muestras_por_segundo": 0.0
+    },
+    "rechazo": {
+      "segundos": 0.0,
+      "muestras_por_segundo": 0.0,
+      "candidatos_generados": 0,
+      "candidatos_descartados": 0,
+      "tasa_aceptacion": 0.0
+    },
+    "veces_mas_lento": 0.0,
+    "conclusion": ""
+  },
+  "resumen": {
+    "ganancia_base": 11082.63,
+    "ganancia_optima": 11318.05,
+    "mejora": 235.42000000000007,
+    "mejora_pct": 2.12422502600917
+  }
+}
