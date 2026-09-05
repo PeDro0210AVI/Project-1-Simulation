@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
 name = "random_engine"
-path = "src/random_engine/lib.rs"
+path = "simulation/random_engine/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
