@@ -61,9 +61,9 @@
     sans-serif;
   --font-numeric:
     ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
-  --background: #ffd0d0;
+  --background: #fdf6f5;
   --foreground: #493030;
-  --card: #fff8f8;
+  --card: #ffffff;
   --card-foreground: #493030;
   --popover: var(--card);
   --popover-foreground: var(--card-foreground);
@@ -71,7 +71,7 @@
   --primary-foreground: #fff8f8;
   --secondary: #e1acac;
   --secondary-foreground: #553838;
-  --muted: #ffd0d0;
+  --muted: #f4e7e5;
   --muted-foreground: #815b5b;
   --accent: #ca8787;
   --accent-foreground: #493030;
@@ -88,16 +88,16 @@
   --sidebar-accent-foreground: #493030;
   --sidebar-border: #ca8787;
   --sidebar-ring: #fff8f8;
-  --waste: #e1acac;
-  --waste-foreground: #493030;
-  --unmet-demand: #ca8787;
-  --unmet-demand-foreground: #493030;
-  --profit: #a87676;
-  --profit-foreground: #493030;
-  --policy-base: #e1acac;
-  --policy-base-foreground: #493030;
-  --policy-optimal: #ffd0d0;
-  --policy-optimal-foreground: #493030;
+  --waste: #8f5f2e;
+  --waste-foreground: #fdf6f5;
+  --unmet-demand: #a8404f;
+  --unmet-demand-foreground: #fdf6f5;
+  --profit: #2f7a62;
+  --profit-foreground: #fdf6f5;
+  --policy-base: #4f5b9e;
+  --policy-base-foreground: #fdf6f5;
+  --policy-optimal: #7a509b;
+  --policy-optimal-foreground: #fdf6f5;
   --chart-1: var(--profit);
   --chart-2: var(--policy-optimal);
   --chart-3: var(--waste);
