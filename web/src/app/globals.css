@@ -48,7 +48,7 @@
   --color-policy-optimal-foreground: var(--policy-optimal-foreground);
   --font-sans: var(--font-interface);
   --font-mono: var(--font-numeric);
-  --font-heading: var(--font-interface);
+  --font-heading: var(--font-display), Georgia, serif;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -94,9 +94,9 @@
   --unmet-demand-foreground: #fdf6f5;
   --profit: #2f7a62;
   --profit-foreground: #fdf6f5;
-  --policy-base: #4f5b9e;
+  --policy-base: #8a7f76;
   --policy-base-foreground: #fdf6f5;
-  --policy-optimal: #7a509b;
+  --policy-optimal: #2f6068;
   --policy-optimal-foreground: #fdf6f5;
   --chart-1: var(--profit);
   --chart-2: var(--policy-optimal);
@@ -138,9 +138,9 @@
   --unmet-demand-foreground: #fbe6e9;
   --profit: #437d68;
   --profit-foreground: #e2f6ed;
-  --policy-base: #646da5;
+  --policy-base: #a2968b;
   --policy-base-foreground: #e8ebff;
-  --policy-optimal: #82639e;
+  --policy-optimal: #6fa8ae;
   --policy-optimal-foreground: #f1e6fb;
 }
 
@@ -156,13 +156,13 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-3xl font-semibold leading-tight tracking-tight sm:text-4xl;
+    @apply font-heading text-3xl font-semibold leading-tight tracking-tight sm:text-4xl;
   }
   h2 {
-    @apply text-2xl font-semibold leading-tight tracking-tight;
+    @apply font-heading text-2xl font-semibold leading-tight tracking-tight;
   }
   h3 {
-    @apply text-lg font-medium leading-snug;
+    @apply font-heading text-lg font-semibold leading-snug;
   }
   p {
     @apply text-base leading-relaxed;
