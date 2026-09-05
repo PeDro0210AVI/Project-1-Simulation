@@ -64,11 +64,11 @@ export function ComparacionInversaRechazo({
           <Metric
             label="Tasa de aceptación"
             value={porcentaje.format(rechazo.tasa_aceptacion)}
-            hint="teórica: 50% (c = λ/μ = 2)"
+            hint="teórica: 50% (c = lambda/mu = 2)"
           />
           <Metric
             label="Rechazo es"
-            value={`${comparacion.veces_mas_lento.toFixed(1)}×`}
+            value={`${comparacion.veces_mas_lento.toFixed(1)}x`}
             hint="más lento que Inversa"
           />
           <Metric
