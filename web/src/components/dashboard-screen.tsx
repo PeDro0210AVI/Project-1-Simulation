@@ -34,7 +34,7 @@ const currency = new Intl.NumberFormat("es-GT", {
 export function DashboardScreen({
   screen,
 }: {
-  screen: "metodos" | "base" | "ajustada" | "hallazgos";
+  screen: "metodos" | "base" | "optimo" | "hallazgos";
 }) {
   const content = {
     metodos: [
@@ -45,9 +45,9 @@ export function DashboardScreen({
       "Simulación base",
       "Política actual supuesta del cliente, por franquicia.",
     ],
-    ajustada: [
-      "Simulación ajustada",
-      "Nivel de producción que maximiza la ganancia esperada.",
+    optimo: [
+      "El óptimo",
+      "De dónde sale el nivel de producción que maximiza la ganancia esperada.",
     ],
     hallazgos: [
       "Hallazgos",
@@ -72,7 +72,7 @@ export function DashboardScreen({
       )}
       {screen === "metodos" && <Methods />}
       {screen === "base" && <PolicyTable policy="base" />}
-      {screen === "ajustada" && <PolicyTable policy="optima" />}
+      {screen === "optimo" && <PolicyTable policy="optima" />}
       {screen === "hallazgos" && <Findings />}
     </div>
   );

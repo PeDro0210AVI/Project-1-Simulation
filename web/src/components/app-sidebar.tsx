@@ -22,12 +22,8 @@ import {
 } from "@/components/ui/sidebar";
 const secciones = [
   { href: "/metodos", label: "Métodos", icon: FlaskConical },
-  { href: "/simulacion-base", label: "Simulación base", icon: PackageSearch },
-  {
-    href: "/simulacion-ajustada",
-    label: "Simulación ajustada",
-    icon: SlidersHorizontal,
-  },
+  { href: "/simulacion", label: "Simulación", icon: PackageSearch },
+  { href: "/optimo", label: "El óptimo", icon: SlidersHorizontal },
   { href: "/hallazgos", label: "Hallazgos", icon: Lightbulb },
 ];
 export function AppSidebar() {

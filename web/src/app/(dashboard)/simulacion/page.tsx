@@ -2,7 +2,7 @@ import simulationData from "../../../../public/data/simulacion.json";
 import type { Simulacion } from "@/lib/tipos";
 import { SimulacionAnimada } from "@/features/simulacion/components/SimulacionAnimada";
 const datos = simulationData as Simulacion;
-export default function SimulacionBasePage() {
+export default function SimulacionPage() {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-2">
