@@ -25,7 +25,7 @@ const metodos = [
     nombre: "Transformada Inversa",
     donde: "Interarribos y cantidades",
     porque:
-      "La exponencial tiene F⁻¹ en forma cerrada: un paso, sin descartes.",
+      "La exponencial tiene F^-1 en forma cerrada: un paso, sin descartes.",
   },
   {
     nombre: "Composición",

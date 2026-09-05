@@ -17,7 +17,7 @@ import {
 const descartados = [
   {
     nombre: "Adelgazamiento (thinning)",
-    resuelve: "Tasa λ(t) variable dentro del período (ej. más clientes al mediodía)",
+    resuelve: "Tasa lambda(t) variable dentro del período (ej. más clientes al mediodía)",
     porque:
       "El sistema modela totales por día, no franjas horarias. No hay tasa variable que adelgazar; el Poisson homogéneo alcanza.",
   },
@@ -25,7 +25,7 @@ const descartados = [
     nombre: "Método Polar",
     resuelve: "Generar pares de variables Normales con eficiencia",
     porque:
-      "Ninguna variable del sistema es Normal — ambas fuentes (llegadas y cantidades) son exponenciales.",
+      "Ninguna variable del sistema es Normal - ambas fuentes (llegadas y cantidades) son exponenciales.",
   },
   {
     nombre: "Poisson bidimensional",
@@ -42,7 +42,7 @@ export function MetodosDescartados() {
       <CardHeader>
         <CardTitle>Métodos descartados</CardTitle>
         <CardDescription>
-          Cada uno resuelve un problema real — no es el problema de este sistema.
+          Cada uno resuelve un problema real - no es el problema de este sistema.
         </CardDescription>
       </CardHeader>
       <CardContent>
