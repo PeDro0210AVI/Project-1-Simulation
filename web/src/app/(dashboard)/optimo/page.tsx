@@ -1,6 +1,7 @@
 import simulationData from "../../../../public/data/simulacion.json";
 import type { Simulacion } from "@/lib/tipos";
 import { CurvaGanancia } from "@/features/optimo/components/CurvaGanancia";
+import { ParametrosDelModelo } from "@/features/optimo/components/ParametrosDelModelo";
 const datos = simulationData as Simulacion;
 export default function OptimoPage() {
   return (
@@ -14,6 +15,7 @@ export default function OptimoPage() {
           aporta. El pico es la recomendación.
         </p>
       </div>
+      <ParametrosDelModelo datos={datos} />
       <div className="flex flex-col gap-4">
         {datos.franquicias.map((franquicia) => (
           <CurvaGanancia key={franquicia.id} franquicia={franquicia} />
