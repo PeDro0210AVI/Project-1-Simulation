@@ -44,26 +44,29 @@ export function MetodosAplicados() {
         <CardDescription>Qué genera cada variable del sistema y por qué ese método.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
-        <div className="overflow-x-auto">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Método</TableHead>
-                <TableHead>Dónde</TableHead>
-                <TableHead>Por qué</TableHead>
+        {/* Los anchos van fijados por columna y el texto largo envuelve: shadcn
+            trae whitespace-nowrap por defecto en TableHead y TableCell, lo que
+            forzaba la tabla a crecer y sacaba scroll horizontal. */}
+        <Table className="table-fixed">
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[9.5rem]">Método</TableHead>
+              <TableHead className="w-[11rem]">Dónde</TableHead>
+              <TableHead className="whitespace-normal">Por qué</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {metodos.map((m) => (
+              <TableRow key={m.nombre}>
+                <TableCell className="whitespace-normal font-medium">{m.nombre}</TableCell>
+                <TableCell className="whitespace-normal">{m.donde}</TableCell>
+                <TableCell className="whitespace-normal text-muted-foreground">
+                  {m.porque}
+                </TableCell>
               </TableRow>
-            </TableHeader>
-            <TableBody>
-              {metodos.map((m) => (
-                <TableRow key={m.nombre}>
-                  <TableCell className="font-medium whitespace-nowrap">{m.nombre}</TableCell>
-                  <TableCell className="whitespace-nowrap">{m.donde}</TableCell>
-                  <TableCell className="text-muted-foreground">{m.porque}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
+            ))}
+          </TableBody>
+        </Table>
         <p className="rounded-lg bg-muted p-4 text-sm text-muted-foreground">
           <span className="font-medium text-foreground">Composición no compite con Inversa, la usa.</span>{" "}
           Composición decide de qué subpoblación sale el cliente (con una uniforme y el corte 90/10);

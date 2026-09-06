@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0",
-    "generado": "2026-09-05T21:05:35+00:00",
+    "generado": "2026-09-06T18:01:51+00:00",
     "semilla": 123,
     "replicas": 1000,
     "dias": 30,
@@ -17017,18 +17017,18 @@
   "comparacion_metodos": {
     "n_muestras": 50000,
     "inversa": {
-      "segundos": 0.0215,
-      "muestras_por_segundo": 2326266.72
+      "segundos": 0.0021,
+      "muestras_por_segundo": 23717297.47
     },
     "rechazo": {
-      "segundos": 0.0521,
-      "muestras_por_segundo": 960211.25,
+      "segundos": 0.0053,
+      "muestras_por_segundo": 9448000.59,
       "candidatos_generados": 99526,
       "candidatos_descartados": 49526,
       "tasa_aceptacion": 0.5024
     },
-    "veces_mas_lento": 2.42,
-    "conclusion": "Ambos metodos generan la misma Exp(media 2 brownies) y pasan la validacion estadistica (media, varianza y chi-cuadrado, ver notebooks/generadores.ipynb): los dos son correctos. La diferencia es de costo. Rechazo necesita en promedio 1.99 candidatos por muestra aceptada -una tasa de aceptacion de 50%, la que predice c=2- y por eso resulta 2.4x mas lento. El sistema usa Inversa en produccion no porque haya medido mas rapido, sino porque la exponencial tiene F^-1 en forma cerrada: F^-1(u) = -ln(1-u)/lambda resuelve la generacion en un paso, sin descartes. Aceptacion-Rechazo se justificaria solo si F no fuera invertible, y ese caso no se presenta en este sistema."
+    "veces_mas_lento": 2.51,
+    "conclusion": "Ambos metodos generan la misma Exp(media 2 brownies) y pasan la validacion estadistica (media, varianza y chi-cuadrado, ver notebooks/generadores.ipynb): los dos son correctos. La diferencia es de costo. Rechazo necesita en promedio 1.99 candidatos por muestra aceptada -una tasa de aceptacion de 50%, la que predice c=2- y por eso resulta 2.5x mas lento. El sistema usa Inversa en produccion no porque haya medido mas rapido, sino porque la exponencial tiene F^-1 en forma cerrada: F^-1(u) = -ln(1-u)/lambda resuelve la generacion en un paso, sin descartes. Aceptacion-Rechazo se justificaria solo si F no fuera invertible, y ese caso no se presenta en este sistema."
   },
   "resumen": {
     "ganancia_base": 11158.880000000001,

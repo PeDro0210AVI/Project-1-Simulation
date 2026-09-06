@@ -46,26 +46,24 @@ export function MetodosDescartados() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="overflow-x-auto">
-          <Table>
+        <Table className="table-fixed">
             <TableHeader>
               <TableRow>
-                <TableHead>Descartado</TableHead>
-                <TableHead>Qué resuelve</TableHead>
-                <TableHead>Por qué no aplica</TableHead>
+                <TableHead className="w-[11rem] whitespace-normal">Descartado</TableHead>
+                <TableHead className="whitespace-normal">Qué resuelve</TableHead>
+                <TableHead className="whitespace-normal">Por qué no aplica</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {descartados.map((m) => (
                 <TableRow key={m.nombre}>
-                  <TableCell className="font-medium whitespace-nowrap">{m.nombre}</TableCell>
-                  <TableCell className="text-muted-foreground">{m.resuelve}</TableCell>
-                  <TableCell className="text-muted-foreground">{m.porque}</TableCell>
+                  <TableCell className="whitespace-normal font-medium">{m.nombre}</TableCell>
+                  <TableCell className="whitespace-normal text-muted-foreground">{m.resuelve}</TableCell>
+                  <TableCell className="whitespace-normal text-muted-foreground">{m.porque}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
-          </Table>
-        </div>
+        </Table>
       </CardContent>
     </Card>
   );
