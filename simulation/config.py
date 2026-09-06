@@ -30,6 +30,10 @@ DIAS_POR_REPLICA = 30
 REPLICAS = 1000
 PASO_PRODUCCION = 1
 
+# Seccion 1 del sitio: cuantas muestras generar en la comparacion Inversa vs
+# Rechazo. Coincide con el N5 del notebook notebooks/generadores.ipynb.
+N_MUESTRAS_COMPARACION = 50_000
+
 
 @dataclass(frozen=True)
 class Franquicia:

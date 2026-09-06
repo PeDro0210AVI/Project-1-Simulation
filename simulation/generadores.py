@@ -55,3 +55,21 @@ def cantidad_comprada(
     """
     cantidad_continua, es_mayorista = _motor.customer_quantity(tasa_regular, tasa_mayorista)
     return max(MINIMO_POR_CLIENTE, round(cantidad_continua)), es_mayorista
+
+
+def cantidad_regular_inversa(tasa: float = TASA_REGULAR) -> float:
+    """
+    Cantidad del cliente regular por Transformada Inversa, sin pasar por
+    Composicion ni redondear. Solo para la Seccion 1 (comparacion.py): en
+    produccion la cantidad real sale de cantidad_comprada.
+    """
+    return _motor.regular_quantity_inverse(tasa)
+
+
+def cantidad_regular_rechazo(tasa: float = TASA_REGULAR) -> tuple[float, int]:
+    """
+    La misma cantidad del cliente regular, por Aceptacion-Rechazo, y cuantos
+    candidatos costo aceptar una muestra. Solo para comparar contra Inversa en
+    la Seccion 1: en produccion se usa Inversa (ver notebooks/generadores.ipynb).
+    """
+    return _motor.regular_quantity_accept_reject(tasa)

@@ -85,6 +85,7 @@
                 rustEnv
 
                 maturin
+                nodejs
               ];
 
               shellHook = ''

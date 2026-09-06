@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from . import config, contrato, generadores, montecarlo
+from . import comparacion, config, contrato, generadores, montecarlo
 
 
 def _hallazgo(resultado: montecarlo.ResultadoFranquicia) -> str:
@@ -91,4 +91,5 @@ def correr() -> dict[str, Any]:
         bloque_franquicia(montecarlo.correr_franquicia(franquicia))
         for franquicia in config.FRANQUICIAS
     ]
-    return contrato.construir(bloques, placeholder=False)
+    comparacion_metodos = comparacion.medir()
+    return contrato.construir(bloques, comparacion_metodos, placeholder=False)
